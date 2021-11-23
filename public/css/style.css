@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #ebebeb;
+}
+p{font-size: 12px;}
+/*header*/
+.header{
+    background-color: #EAC926;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.burgerMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burgerMenu > i{
+    background: #0044AA;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav > ul{
+    display: none;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    font-size: 0.8rem;
+    
+}
+.nav > ul li{
+    padding: 5px;
+    float: left;
+}
+.nav > ul a{
+    color: #000;
+    text-decoration: none;
+}
+.topHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    width: 50%;
+}
+.logo > img{
+    max-width: 100%;
+}
+.busqueda{
+    width: 50%;
+}
+.busqueda > form{
+    display: flex;
+    justify-content: end;
+}
+.busqueda > form > input{
+    width: 50%;
+    padding: 5px 10px;
+    margin: 0;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+.busqueda > form > button{
+    padding: 5px 10px;
+    margin: 0;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}   
+.HeadMsj{
+    width: 100%;
+}
+.HeadMsj > p{
+    text-align: center;
+}
+/*banner*/
+.banner{
+    width: 100%;
+    margin-top: 153px;
+}
+.banner > img{
+    width: 100%;
+}
+/*main*/
+.main{
+    width: 90%;
+    margin: auto;
+}
+.sec > h3{
+    font-size: 24px; /*1.5rem o 24px | 6vw*/
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.productos > article{
+    background: #fff;
+    margin: 10px;
+}
+.mainArt{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.productos > article > img{
+    width: 100%;
+}
+.mainArt > i{
+    background: #fff;
+    display: block;
+    font-size: 16px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.mainArt > .price{
+    width: 30%;
+    font-size: 18px;
+}
+.mainArt > .discount{
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+}
+.mainArt > .description{
+    color: #9a9a9a;
+    width: 100%;
+    font-size: 16px;
+    display: none;
+    margin: 0;
+}
+.secForm{
+    width: 50%;
+    margin: 220px auto;
+}
+.sFormItem{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sFormItem  input{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    padding: 5px 10px;
+}
+.sFormItem > input[type=submit] , .buttonsForm > input[type=reset], input[type=submit]{
+    width: auto;
+}
+.sFormItem > input[type=submit]:hover, .buttonsForm > input[type=submit]:hover , input[type=reset]:hover {
+    background: #0044AA;
+    color: #fff;
+    transition: all ease .5s;
+}
+.register{
+    display: block;
+}
+.regNacimiento{
+    padding: 10px 0;
+}
+.regPerfil{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.regPerfil > label{
+    width: 100%;
+}
+.regPerfilRadio{
+    display: flex;
+    align-items: center;
+}
+.regPerfilRadio > input{
+    width: auto;
+    margin: 0;
+}
+.regPerfilRadio > p{
+    display: inline;
+    padding: 10px;
+}
+.intereses > label{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.interesesItems{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.interesesItems > label{
+    display: inline;
+    padding-right: 10px;
+}
+.interesesItems > input{
+    margin: 0;
+    width: auto;
+}
+.regFotoUser{
+    margin-top: 10px;
+    width: 100%;
+}
+/*foooter*/
+.copy{
+    text-align: center;
+}
+.sectFooterItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sectFooterItem > i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0044AA;
+}
+@media only screen and (min-width: 361px){
+    .productos > article{
+        width: 40%;
+    }
+    .productos > article:hover{
+        transition: box-shadow ease 1s;
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+    .mainArt > .discount{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .mainArt > i:hover{
+        transform: rotate(-90deg);
+        transition: all ease-in .6s;
+    }
+    .productos > article:hover > .mainArt > .description{
+        display: block;
+    }
+    /*form*/
+    .sFormItem > input{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:769px){
+    .nav > ul{
+        display: block;
+    }
+    .burgerMenu{
+        display: none;
+    }
+    .topHeader{
+        flex-wrap: nowrap;
+    }
+    .busqueda{
+        width: 100%;
+    }
+    .banner{
+        margin-top: 110px;
+    }
+    .productos > article{
+        width: 22%;
+    }
+    .secForm{
+        width: 30%;
+    }
+    /*footer*/
+    .sectionFooter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectFooterItem{
+        width: 30%;
+    }
+}
